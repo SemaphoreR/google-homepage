@@ -5,6 +5,9 @@
 
 
 <style>
+    body {
+        margin: 0px;
+    }
 .button {
     border: none;
     padding: 8px;
@@ -46,13 +49,40 @@
 #search {
     margin-right: 10px;
 }
+#left {
+    bottom: 0;
+    left: 0;
+    float: left;
+    max-height: 100%;
+    z-index: 2;
+}
+#right {
+    bottom: 0;
+    right: 0;
+    float: right;
+    max-height: 100%;
+    z-index: 2;
+}
+#left li{
+    display: inline;
+    padding: 0 20px 0 0;
+}
+#right li{
+    display: inline;
+    padding: 0 0 0 20px;
+}
 footer {
     color:rgb(85, 84, 84);
     background-color:rgb(235, 235, 235);
-    padding: 20px;
     position: absolute;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: rgb(182, 182, 182);
+    border-style: solid;
+    border-width: 1px 0 0 0;
+
 }
 
 </style>
@@ -74,7 +104,17 @@ footer {
 </form>
 
 <footer>
+<ul id="left">
+    <li>Business</li>
+    <li>Advertising</li>
+    <li>How Search Works</li>
+</ul>
 
+<ul id="right">
+    <li>Privacy</li>
+    <li>Concerns</li>
+    <li>Settings</li>
+</ul>
 </footer>
 </div>
 <footer id="footer"></footer>
