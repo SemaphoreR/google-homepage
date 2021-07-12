@@ -8,6 +8,13 @@
 body {
         margin: 0px;
     }
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+a.grey:link, a.grey:visited {
+    color:rgb(85, 84, 84);
+}
 header {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -15,20 +22,30 @@ header {
     flex-direction: row;
     }
 #topleft {
+    padding: 20px 30px 20px 30px;
     display: flex;
     justify-content: left;
     max-width: 50%;
+    gap: 12px;
+    align-items: center;
+    height: 26px;
 }
 #topright {
+    margin-left: auto;
+    padding: 20px 30px 20px 30px;
     display: flex;
     justify-content: right;
+    max-width: 50%;
+    gap: 12px;
+    align-items: center;
+    height: 26px;
 }
 #signin {
-    background-color: rgb(43, 110, 255);
+    background-color: rgb(73, 130, 252);
     color: white;
     border: none;
     padding: 5px 10px 5px 10px;
-    margin: 0 20px 0 0;
+    font-weight: bold;
 }
 .button {
     border: none;
@@ -71,41 +88,40 @@ header {
 #search {
     margin-right: 10px;
 }
-#left {
-    bottom: 0;
-    left: 0;
-    float: left;
-    max-height: 100%;
-    z-index: 2;
-}
-#right {
-    bottom: 0;
-    right: 0;
-    float: right;
-    max-height: 100%;
-    z-index: 2;
-}
-#left li{
-    display: inline;
-    padding: 0 20px 0 0;
-}
-#right li{
-    display: inline;
-    padding: 0 0 0 20px;
-}
 footer {
     color:rgb(85, 84, 84);
     background-color:rgb(235, 235, 235);
     position: absolute;
     bottom: 0;
+    height: 40px;
     width: 100%;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     border-color: rgb(182, 182, 182);
     border-style: solid;
     border-width: 1px 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+#left {
+    display: flex;
+    gap: 25px;
+    max-height: 100%;
+    z-index: 2;
+    align-items: center;
+    padding: 0 0 0 30px;
+}
+#right {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    max-height: 100%;
+    z-index: 2;
+    align-items: center;
+    padding: 0 30px 0 0;
 
 }
+
 
 </style>
 
@@ -141,17 +157,17 @@ footer {
 </main>
 
 <footer>
-<ul id="left">
-    <li>Business</li>
-    <li>Advertising</li>
-    <li>How Search Works</li>
-</ul>
+<div id="left">
+    <a href="" class="grey">Business</a>
+    <a href="" class="grey">Advertising</a>
+    <a href="" class="grey">How Search Works</a>
+</div>
 
-<ul id="right">
-    <li>Privacy</li>
-    <li>Concerns</li>
-    <li>Settings</li>
-</ul>
+<div id="right">
+    <a href="" class="grey">Privacy</a>
+    <a href=""class= "grey">Concerns</a>
+    <a href="" class="grey">Settings</a>
+</div>
 </footer>
 </div>
 <footer id="footer"></footer>
