@@ -75,12 +75,14 @@ header {
 }
 #search-bar {
     width: 571px;
-    padding: 10px;
+    padding: 10px 10px 10px 40px;
     margin: 0 auto 30px auto;
     border-color: rgb(207, 207, 207);
     border-radius: 30px;
     border-style: solid;
     border-width: 1px;
+    background: url("search_black_24dp.svg") no-repeat left, url("mic_black_24dp.svg") no-repeat right;
+    background-position: 10px 10px, right;
 }
 #search-bar:hover {
     filter: drop-shadow(0px 0px 3px rgb(161, 161, 161));
@@ -155,7 +157,6 @@ footer {
 <button class="button" id="lucky" type="submit">I'm Feeling Lucky</button>
 </form>
 </main>
-
 <footer>
 <div id="left">
     <a href="" class="grey">Business</a>
