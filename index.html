@@ -8,11 +8,13 @@
 body {
         margin: 0px;
     }
-a:link, a:visited {
+a:link,
+a:visited {
     color: black;
     text-decoration: none;
 }
-a.grey:link, a.grey:visited {
+a.grey:link,
+a.grey:visited {
     color:rgb(85, 84, 84);
 }
 header {
@@ -21,75 +23,81 @@ header {
     display: flex;
     flex-direction: row;
     }
-#topleft {
-    padding: 20px 30px 20px 30px;
-    display: flex;
-    justify-content: left;
-    max-width: 50%;
-    gap: 12px;
-    align-items: center;
-    height: 26px;
-}
-#topright {
-    margin-left: auto;
-    padding: 20px 30px 20px 30px;
-    display: flex;
-    justify-content: right;
-    max-width: 50%;
-    gap: 12px;
-    align-items: center;
-    height: 26px;
-}
-#signin {
-    background-color: rgb(73, 130, 252);
-    color: white;
-    border: none;
-    padding: 5px 10px 5px 10px;
-    font-weight: bold;
-}
-.button {
-    border: none;
-    padding: 8px;
-    font-size: 14px;
-    color:rgb(85, 84, 84);
-    background-color:rgb(235, 235, 235);
-    border: 1px solid transparent;
-}
-.button:hover{
-    border-style: solid;
-    border-color: rgb(163, 163, 163);
-    border-width: 1px;
-    color: black;
- }
-#logo {
-    display: block;
-    padding: 160px 0 30px 0;
-    margin: 0 auto 0 auto;
-    width: auto;
-}
-#form {
-    display: block;
-    margin: 0 auto 0 auto;
-    width: auto;
-    text-align: center;
-}
-#search-bar {
-    width: 571px;
-    padding: 10px 10px 10px 40px;
-    margin: 0 auto 30px auto;
-    border-color: rgb(207, 207, 207);
-    border-radius: 30px;
-    border-style: solid;
-    border-width: 1px;
-    background: url("search_black_24dp.svg") no-repeat left, url("mic_black_24dp.svg") no-repeat right;
-    background-position: 10px 10px, right;
-}
-#search-bar:hover {
-    filter: drop-shadow(0px 0px 3px rgb(161, 161, 161));
-}
-#search {
-    margin-right: 10px;
-}
+    #headerleft {
+        padding: 20px 30px 20px 30px;
+        display: flex;
+        justify-content: left;
+        max-width: 50%;
+        gap: 12px;
+        align-items: center;
+        height: 26px;
+    }
+    #headerright {
+        margin-left: auto;
+        padding: 20px 30px 20px 30px;
+        display: flex;
+        justify-content: right;
+        max-width: 50%;
+        gap: 12px;
+        align-items: center;
+        height: 26px;
+    }
+    #signin {
+        background-color: rgb(73, 130, 252);
+        color: white;
+        border: none;
+        padding: 5px 10px 5px 10px;
+        font-weight: bold;
+    }
+    .button {
+        border: none;
+        padding: 8px;
+        font-size: 14px;
+        color:rgb(85, 84, 84);
+        background-color:rgb(235, 235, 235);
+        border: 1px
+                solid
+                transparent;
+    }
+    .button:hover{
+        border-style: solid;
+        border-color: rgb(163, 163, 163);
+        border-width: 1px;
+        color: black;
+    }
+main
+    #logo {
+        display: block;
+        padding: 160px 0 30px 0;
+        margin: 0 auto 0 auto;
+        width: auto;
+    }
+    #form {
+        display: block;
+        margin: 0 auto 0 auto;
+        width: auto;
+        text-align: center;
+    }
+    #search-bar {
+        width: 571px;
+        padding: 10px 10px 10px 40px;
+        margin: 0 auto 30px auto;
+        border-color: rgb(207, 207, 207);
+        border-radius: 30px;
+        border-style: solid;
+        border-width: 1px;
+        background: url("search_black_24dp.svg")
+                    no-repeat left,
+                    url("mic_black_24dp.svg")
+                    no-repeat right;
+        background-position: 10px 10px, right;
+    }
+    #search-bar:hover {
+        filter: drop-shadow(0px 0px 3px rgb(161, 161, 161));
+    }
+    #search {
+        margin-right: 10px;
+    }
 footer {
     color:rgb(85, 84, 84);
     background-color:rgb(235, 235, 235);
@@ -105,22 +113,22 @@ footer {
     display: flex;
     flex-direction: row;
 }
-#left {
-    display: flex;
-    gap: 25px;
-    max-height: 100%;
-    z-index: 2;
-    align-items: center;
-    padding: 0 0 0 30px;
-}
-#right {
-    display: flex;
-    gap: 25px;
-    margin-left: auto;
-    max-height: 100%;
-    z-index: 2;
-    align-items: center;
-    padding: 0 30px 0 0;
+    #footerleft {
+        display: flex;
+        gap: 25px;
+        max-height: 100%;
+        z-index: 2;
+        align-items: center;
+        padding: 0 0 0 30px;
+    }
+    #footerright {
+        display: flex;
+        gap: 25px;
+        margin-left: auto;
+        max-height: 100%;
+        z-index: 2;
+        align-items: center;
+        padding: 0 30px 0 0;
 
 }
 
@@ -128,18 +136,19 @@ footer {
 </style>
 
     <head>
-
+<title>Google Search</title>
     </head>
+
 <header>
-<div id="topleft">
+<div id="headerleft">
     <a href="">About</a>
     <a href="">Store</a>
 </div>
 
-<div id="topright">
+<div id="headerright">
     <a href="">Gmail</a>
     <a href="">Images</a>
-    <a href=""><img src="apps.png"></a>
+    <a href=""><img src="apps.png" alt="Apps Icon"></a>
     <button class="signin" id="signin" type="submit">Sign In</button>
 </div>
 </header>
@@ -148,7 +157,7 @@ footer {
           <div id="content-wrap">
 
 <main>
-<img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The Google Logo">
 
 <form id="form" action="">
 <input type="text" id="search-bar" name="search-bar" value="">
@@ -158,13 +167,13 @@ footer {
 </form>
 </main>
 <footer>
-<div id="left">
+<div id="footerleft">
     <a href="" class="grey">Business</a>
     <a href="" class="grey">Advertising</a>
     <a href="" class="grey">How Search Works</a>
 </div>
 
-<div id="right">
+<div id="footerright">
     <a href="" class="grey">Privacy</a>
     <a href=""class= "grey">Concerns</a>
     <a href="" class="grey">Settings</a>
